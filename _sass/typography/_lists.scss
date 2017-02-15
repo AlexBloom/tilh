@@ -8,7 +8,7 @@ li {
 ul, ol, dl {
     padding-left: $space-m;
     margin-top:0;
-    margin-bottom: $space-after;
+    margin-bottom: $space-s;
 }
 
 li {
@@ -19,10 +19,12 @@ li {
 }
 .list-reset {
     list-style: none;
+    padding-left: 0;
     li{
       padding-bottom:0;
     }
 }
+.list-style-none { list-style: none }
 
 dl{
   list-style:square;

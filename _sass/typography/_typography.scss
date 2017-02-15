@@ -1,5 +1,6 @@
-// Family Declarations
-
+/*
+ * Family Declarations
+ */
 @font-face {
     font-family: 'nexa';
     src: url('../fonts/nexa_free_light-webfont.woff2') format('woff2'),
@@ -7,9 +8,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
-
 $sans-font-family: -apple-system, BlinkMacSystemFont,
   "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
   "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif ;
@@ -45,8 +43,11 @@ $base-font-family: $serif-font-family;
   font-family:$condensed-font-family;
   font-weight:normal;
 }
+.font-family-inherit { font-family: inherit }
 
-// Base Type Scales
+/*
+ * Type Scales
+ */
 $base-font-size:   1rem;
 $base-line-height: 1.5;
 
@@ -58,17 +59,41 @@ $h3: 1.25rem; // 20px
 $h4: 1rem;    // 16px
 $h5: .875rem; // 14px
 $h6: .75rem;  // 12px
-$small-font-size: .875rem;
+$small-font-size: $h6;
+
+:root {
+  --h1: 4.5rem;
+  --h2: 3rem;
+  --h3: 2.25rem;
+  --h4: 1.5rem;
+  --h5: 1.125rem;
+  --h6: .75rem;
+
+  --lh: calc(4/3);
+  --mx: 32em;
+
+  --ratio-2-3: calc(2/3 * 1em); //m1
+  --ratio-4-3: calc(4/3 * 1em); //m2
+  --ratio-8-3: calc(8/3 * 1em); //m3
+  --ratio-16-3: calc(16/3 * 1em); //m4
+}
+.font-size-inherit { font-size: inherit }
 
 // Line Height, Maybe lh as class
-$leading-solid: 1;
-$leading-headline: 1.25;
-$leading-text: 1.5;
+//$leading-solid: 1;
+//$leading-headline: 1.25;
+//$leading-text: 1.5;
+//.lh-solid { line-height: $leading-solid }
+//.lh-headline { line-height: $leading-headline }
+//.lh-text { line-height: $leading-text }
+.lh-solid { line-height: 1 }
+/* h0, h1, h3 */
+.lh2 { line-height: calc(7/6 * 1em) }
+/* For body copy */
+.lh3 { line-height: calc(16/9 * 1em) }
 
-// Addtl Style & Weight Variables
-$caps-letter-spacing: .1em;
+// Weight
 $bold-font-weight: 600;
-
 .fw-100{font-weight:100}
 .fw-200{font-weight:200}
 .fw-300{font-weight:300}
@@ -79,60 +104,15 @@ $bold-font-weight: 600;
 .fw-800{font-weight:800}
 .fw-900{font-weight:900}
 
-h1, .h1 { font-size: $h1 }
-h2, .h2 { font-size: $h2 }
-h3, .h3 { font-size: $h3 }
-h4, .h4 { font-size: $h4 }
-h5, .h5 { font-size: $h5; line-height:1.5rem; }
-h6, .h6 { font-size: $h6; line-height:1.5rem; }
+// Letter Spacing
+$caps-letter-spacing: .1em;
 
-.m-h1{
-  @include breakpoint(m){
-    font-size:$h1;
-  }
-}
-.m-h2{
-  @include breakpoint(m){
-    font-size:$h2;
-  }
-}
-.m-h3{
-  @include breakpoint(m){
-    font-size:$h3;
-  }
-}
-.l-h1{
-  @include breakpoint(l){
-    font-size:$h1;
-  }
-}
-.l-h2{
-  @include breakpoint(l){
-    font-size:$h2;
-  }
-}
-.l-h3{
-  @include breakpoint(l){
-    font-size:$h3;
-  }
-}
-
-@include breakpoint(m){
-
-}
-
+// Measure
 $measure-width:32em;
-.measure, .mx{
+.measure{
   max-width:$measure-width;
 }
-.leading-solid { line-height: $leading-solid }
-.leading-headline { line-height: $leading-headline }
-.leading-text { line-height: $leading-text }
 
-/* Basscss Typography */
-.font-family-inherit { font-family: inherit }
-.font-size-inherit { font-size: inherit }
-.text-decoration-none { text-decoration: none }
 
 strong { font-weight: $bold-font-weight}
 .regular { font-weight: normal }
@@ -140,17 +120,17 @@ strong { font-weight: $bold-font-weight}
 .caps    { text-transform: uppercase; letter-spacing: $caps-letter-spacing; }
 .uppercase{ text-transform:uppercase; }
 .bold {font-weight:$bold-font-weight;}
+.underline { text-decoration: underline }
+.text-decoration-none { text-decoration: none }
+// Alignment
 .text-left   { text-align: left }
-.text-center       { text-align: center }
+.text-center { text-align: center }
 .text-right  { text-align: right }
-.text-justify      { text-align: justify }
+.text-justify{ text-align: justify }
 
+// Wraps
 .nowrap { white-space: nowrap }
 .break-word { word-wrap: break-word }
-
-.list-style-none { list-style: none }
-.underline { text-decoration: underline }
-
 .truncate {
   max-width: 100%;
   overflow: hidden;
@@ -158,51 +138,40 @@ strong { font-weight: $bold-font-weight}
   white-space: nowrap;
 }
 
-.list-reset {
-  list-style: none;
-  padding-left: 0;
-}
 
-//Type Spacing
-$space-before: 1.5rem;
-$space-after:  1.5rem;
+
+// //Type Spacing
+// $space-before: 1.5rem;
+// $space-after:  1.5rem;
+
 
 
 /**
- * Basic styling
+ * Body
  */
 body {
     font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    //font-size: $base-font-size;
+    //line-height: $base-line-height;
+    font-size: var(--h5);
+    line-height: var(--lh);
     font-weight: normal;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     color: #58595B;
 }
 
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure, small,
-%vertical-rhythm {
-    margin-top:0;
-    margin-bottom: $space-after/2;
-}
-
-
-p {
-  //max-width:$measure-width;
-  //opacity:0.9;
-}
-small, .small{
-  font-size:0.875rem;
-  line-height:1.5rem;
-  margin-top:0.125rem;
-
-}
+// h1, h2, h3, h4, h5, h6,
+// p, blockquote, pre,
+// ul, ol, dl, figure, small,
+// %vertical-rhythm {
+//     margin-top:0;
+//     margin-bottom: $space-after/2;
+// }
 
 @import
 "headings",

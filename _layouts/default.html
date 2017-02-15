@@ -3,16 +3,13 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="bg-sand">
     {% include icons.html %}
-    {% include header.html %}
-
-    <div class="m-s border-thin border-gold">
-        {{ content }}
+    <div class="m-s border-thin border-dk-gray bg-white">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
     </div>
-
-    {% include footer.html %}
-
   </body>
 
 </html>
