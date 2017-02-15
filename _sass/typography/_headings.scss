@@ -1,0 +1,58 @@
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: $heading-font-family;
+  line-height: $leading-headline;
+  color:$black90;
+}
+
+:root {
+  --h1: 4.5rem;
+  --h2: 3rem;
+  --h3: 2.25rem;
+  --h4: 1.5rem;
+  --h5: 1.125rem;
+  --h6: .75rem;
+
+  --lh: calc(4/3);
+  --mx: 32em;
+
+  --ratio-2-3: calc(2/3 * 1em); //m1
+  --ratio-4-3: calc(4/3 * 1em); //m2
+  --ratio-8-3: calc(8/3 * 1em); //m3
+  --ratio-16-3: calc(16/3 * 1em); //m4
+}
+
+body {
+  font-size: var(--h5);
+  line-height: var(--lh);
+}
+
+h1, h2, h3 {
+  margin-top: var(--m1);
+  margin-bottom: 0;
+}
+
+h4, h5, h6,
+p, dl, ol, ul, blockquote {
+  margin-top: var(--m2);
+  margin-bottom: var(--m2);
+}
+
+h1      { font-size: var(--h2) }
+h2, h3  { font-size: var(--h3) }
+h4      { font-size: var(--h4) }
+h5, h6  { font-size: var(--h5) }
+
+.h1 { font-size: var(--h2) }
+.h2 { font-size: var(--h3) }
+.h3 { font-size: var(--h4) }
+.h4 { font-size: var(--h5) }
+.h5 { font-size: var(--h6) }
+.h6 { font-size: var(--h6) }
+
+.lh1 { line-height: 1 }
+/* h0, h1, h3 */
+.lh2 { line-height: calc(7/6 * 1em) }
+/* For body copy */
+.lh3 { line-height: calc(16/9 * 1em) }
