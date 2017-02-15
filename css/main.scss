@@ -54,6 +54,22 @@ span.kern{
 }
 
 
+
+.translate-down{
+  transform: translateY($space-xxxl);
+  margin-top: -$space-xxxl;
+  margin-bottom: $space-xxxl;
+}
+
+.translate-border{
+  box-shadow:0 0 0 2px #C2B59B;
+}
+
+
+
+
+
+
 // LOGO ANIMATION
 
 .eye-bracket {

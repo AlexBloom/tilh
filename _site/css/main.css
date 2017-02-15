@@ -2368,6 +2368,14 @@ body {
 span.kern {
   letter-spacing: .02em; }
 
+.translate-down {
+  transform: translateY(16rem);
+  margin-top: -16rem;
+  margin-bottom: 16rem; }
+
+.translate-border {
+  box-shadow: 0 0 0 2px #C2B59B; }
+
 .eye-bracket:before, .eye-bracket:after {
   /* Chrome, Safari, Opera */
   -webkit-animation-name: openEye;
