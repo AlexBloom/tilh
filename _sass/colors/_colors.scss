@@ -22,7 +22,7 @@ $color-list: (
 
   .border-#{nth($value, 1)} {
     border-color: nth($value, 2);
-    border-style: solid;
+    //border-style: solid;
   }
 }
 

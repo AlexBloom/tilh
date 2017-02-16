@@ -450,8 +450,7 @@ dl, dd, ol, ul, figure {
   background-color: #FFF; }
 
 .border-white {
-  border-color: #FFF;
-  border-style: solid; }
+  border-color: #FFF; }
 
 .lt-gray {
   color: #BEC2B4; }
@@ -460,8 +459,7 @@ dl, dd, ol, ul, figure {
   background-color: #BEC2B4; }
 
 .border-lt-gray {
-  border-color: #BEC2B4;
-  border-style: solid; }
+  border-color: #BEC2B4; }
 
 .md-gray {
   color: #808285; }
@@ -470,8 +468,7 @@ dl, dd, ol, ul, figure {
   background-color: #808285; }
 
 .border-md-gray {
-  border-color: #808285;
-  border-style: solid; }
+  border-color: #808285; }
 
 .dk-gray {
   color: #58595B; }
@@ -480,8 +477,7 @@ dl, dd, ol, ul, figure {
   background-color: #58595B; }
 
 .border-dk-gray {
-  border-color: #58595B;
-  border-style: solid; }
+  border-color: #58595B; }
 
 .sand {
   color: #C2B59B; }
@@ -490,8 +486,7 @@ dl, dd, ol, ul, figure {
   background-color: #C2B59B; }
 
 .border-sand {
-  border-color: #C2B59B;
-  border-style: solid; }
+  border-color: #C2B59B; }
 
 .copper {
   color: #C49A6C; }
@@ -500,8 +495,7 @@ dl, dd, ol, ul, figure {
   background-color: #C49A6C; }
 
 .border-copper {
-  border-color: #C49A6C;
-  border-style: solid; }
+  border-color: #C49A6C; }
 
 .gold {
   color: #E2C675; }
@@ -510,8 +504,7 @@ dl, dd, ol, ul, figure {
   background-color: #E2C675; }
 
 .border-gold {
-  border-color: #E2C675;
-  border-style: solid; }
+  border-color: #E2C675; }
 
 .aqua {
   color: #93D5D3; }
@@ -520,8 +513,7 @@ dl, dd, ol, ul, figure {
   background-color: #93D5D3; }
 
 .border-aqua {
-  border-color: #93D5D3;
-  border-style: solid; }
+  border-color: #93D5D3; }
 
 .blue {
   color: #377295; }
@@ -530,8 +522,7 @@ dl, dd, ol, ul, figure {
   background-color: #377295; }
 
 .border-blue {
-  border-color: #377295;
-  border-style: solid; }
+  border-color: #377295; }
 
 .purple {
   color: #662D91; }
@@ -540,8 +531,7 @@ dl, dd, ol, ul, figure {
   background-color: #662D91; }
 
 .border-purple {
-  border-color: #662D91;
-  border-style: solid; }
+  border-color: #662D91; }
 
 .black {
   color: #000; }
