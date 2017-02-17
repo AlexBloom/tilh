@@ -3,15 +3,20 @@ layout: default
 title: Living Hope
 ---
 
-<section class="py-xl px-m">
+<!-- style="background-image:url({{site.baseurl}}/img/holding_grass.jpg)" -->
+<section class="py-xl px-m bg-cover">
 
-    <!-- <img src="{{site.baseurl}}/img/living_hope_logo.svg" alt=""> -->
-    <svg class="blue mx-auto block my-xl">
-      <use xlink:href="#maze-h"/>
-    </svg>
-    <h3 class="text-center caps">Welcome</h3>
-    <h1 class="l-h2 caps heading text-center dk-gray">To Living Hope</h1>
+      <div class="mx-auto">
+        <svg class="blue mx-auto block my-xl">
+          <use xlink:href="#maze-h"/>
+        </svg>
+      </div>
 
+    <h3 class="blue text-center caps">Welcome</h3>
+    <h1 class="blue m-h2 l-h1 caps heading text-center dk-gray">To Living Hope</h1>
+    <div class="shadow-high measure my-xl mx-auto">
+      <img src="{{site.baseurl}}/img/holding_grass.jpg" alt="">
+    </div>
     <h2 class="max-width-m mx-auto serif l-h3 text-center italic">A series of practices along with shared words and wisdom from a community of dynamic Hope Practitioners.</h2>
 
 </section>
@@ -158,7 +163,7 @@ title: Living Hope
   </div>
   <div class="px-l">
     <div class="mx-auto measure py-m mb-l bg-white shadow-high" style="margin-top:-7rem;">
-      <form action="" class="">
+      <!-- <form action="" class="">
         <div class="cf">
           <div class="col col-12 s-col-6 px-m">
             <label class="sans h6 caps" for="fname">First Name</label><br>
@@ -176,9 +181,25 @@ title: Living Hope
           <input id="story" class="p-m my-m" type="checkbox" name="Test" value="I would"> <label for="#story"> I'd like to submit a story of Living Hope </label><br>
           <input type="submit" class="button bold p-m mt-m sans h6 caps bg-aqua border-none width-100" name="submit" value="submit">
         </div>
+      </form> -->
+      <form accept-charset="UTF-8" action="https://ik357.infusionsoft.com/app/form/process/c9f6a93dc440a5000a927f3729cb55b0" class="infusion-form" method="POST">
 
+        <input name="inf_form_xid" type="hidden" value="c9f6a93dc440a5000a927f3729cb55b0" />
+        <input name="inf_form_name" type="hidden" value="Web Form submitted" />
+        <input name="infusionsoft_version" type="hidden" value="1.62.0.48" />
+        <div class="cf px-m">
+          <label class="sans h6 caps" for="inf_field_FirstName">First Name *</label><br>
+          <input class="p-m my-m width-100" placeholder="Hope" id="inf_field_FirstName" name="inf_field_FirstName" type="text" />
+          <label class="sans h6 caps" for="inf_field_Email">Email *</label><br>
+          <input class="p-m my-m width-100" placeholder="you@example.com" id="inf_field_Email" name="inf_field_Email" type="text" />
+          <input type="submit" class="button bold p-m mt-m sans h6 caps bg-aqua border-none width-100" value="Submit" />
+
+        </div>
       </form>
+      <script type="text/javascript" src="https://ik357.infusionsoft.com/app/webTracking/getTrackingCode"></script>
+
     </div>
   </div>
 </section>
+
 <div class="col-1 mx-auto mt-xl mb-xxl aqua border-bottom-thin"></div>
