@@ -2345,6 +2345,9 @@ td {
 .bg-cover {
   background-size: cover; }
 
+.bg-contain {
+  background-size: contain; }
+
 .bg-center {
   background-position: center; }
 
@@ -2358,7 +2361,7 @@ td {
   background-repeat: repeat-y; }
 
 .bg-repeat-none {
-  background-repeat: none; }
+  background-repeat: no-repeat; }
 
 body {
   background-color: #FFF;
@@ -2369,9 +2372,12 @@ span.kern {
 
 @media screen and (min-width: 64em) {
   #intro {
-    background-image: url(/img/holding_grass.jpg);
-    background-position: -100px center;
-    background-repeat: no-repeat; } }
+    background-image: url(/img/holding_grass_2x1_45q_2b.jpg);
+    background-position: center; } }
+@media screen and (min-width: 96em) {
+  #intro {
+    background-position: 0 center;
+    background-size: contain; } }
 
 .translate-down {
   transform: translateY(16rem);

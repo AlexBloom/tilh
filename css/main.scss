@@ -19,6 +19,9 @@ visibility: visible;
 .bg-cover{
   background-size:cover;
 }
+.bg-contain{
+  background-size:contain;
+}
 .bg-center{
   background-position:center;
 }
@@ -32,7 +35,7 @@ visibility: visible;
   background-repeat:repeat-y;
 }
 .bg-repeat-none{
-  background-repeat:none;
+  background-repeat:no-repeat;
 }
 .visible-grid{
   //background-image: linear-gradient(to right, rgba(0,0,0,.1) 0, rgba(255,255,255,0)1.5px);
@@ -55,9 +58,13 @@ span.kern{
 
 #intro{
   @include breakpoint(l){
-    background-image:url({{site.baseurl}}/img/holding_grass.jpg);
-    background-position:-100px center;
-    background-repeat:no-repeat;
+    background-image:url({{site.baseurl}}/img/holding_grass_2x1_45q_2b.jpg);
+    background-position:center;
+  }
+  @include breakpoint(xl){
+    background-position: 0 center;
+    background-size:contain;
+    //background-repeat:no-repeat;
   }
 }
 
