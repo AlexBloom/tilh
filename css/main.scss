@@ -53,7 +53,11 @@ span.kern{
   letter-spacing:.02em;
 }
 
-
+#intro{
+  @include breakpoint(m){
+    background-image:url({{site.baseurl}}/img/holding_grass.jpg)
+  }
+}
 
 .translate-down{
   transform: translateY($space-xxxl);
