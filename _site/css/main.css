@@ -2367,9 +2367,11 @@ body {
 span.kern {
   letter-spacing: .02em; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   #intro {
-    background-image: url(/img/holding_grass.jpg); } }
+    background-image: url(/img/holding_grass.jpg);
+    background-position: -100px center;
+    background-repeat: no-repeat; } }
 
 .translate-down {
   transform: translateY(16rem);

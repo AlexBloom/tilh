@@ -54,8 +54,10 @@ span.kern{
 }
 
 #intro{
-  @include breakpoint(m){
-    background-image:url({{site.baseurl}}/img/holding_grass.jpg)
+  @include breakpoint(l){
+    background-image:url({{site.baseurl}}/img/holding_grass.jpg);
+    background-position:-100px center;
+    background-repeat:no-repeat;
   }
 }
 
