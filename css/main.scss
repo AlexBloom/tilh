@@ -61,7 +61,7 @@ span.kern{
     background-image:url({{site.baseurl}}/img/holding_grass_2x1_45q_2b.jpg);
     background-position:center;
   }
-  @include breakpoint(xl){
+  @include breakpoint(xxl){
     background-position: 0 center;
     background-size:contain;
     //background-repeat:no-repeat;

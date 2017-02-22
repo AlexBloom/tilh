@@ -113,7 +113,9 @@ $measure-width:32em;
   max-width:$measure-width;
 }
 
-
+.italic, em{
+  letter-spacing: .05em;
+}
 strong { font-weight: $bold-font-weight}
 .regular { font-weight: normal }
 .italic  { font-style: italic }

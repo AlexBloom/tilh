@@ -1946,6 +1946,9 @@ dl, dd, ol, ul, figure {
 .measure {
   max-width: 32em; }
 
+.italic, em {
+  letter-spacing: .05em; }
+
 strong {
   font-weight: 600; }
 
@@ -2169,6 +2172,8 @@ a:active {
   text-decoration: none;
   box-shadow: none; }
   .link:hover {
+    text-decoration: none;
+    box-shadow: none;
     background-image: none; }
 
 .link-underline {
@@ -2374,7 +2379,7 @@ span.kern {
   #intro {
     background-image: url(/img/holding_grass_2x1_45q_2b.jpg);
     background-position: center; } }
-@media screen and (min-width: 96em) {
+@media screen and (min-width: 128em) {
   #intro {
     background-position: 0 center;
     background-size: contain; } }

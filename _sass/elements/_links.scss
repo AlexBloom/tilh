@@ -33,7 +33,10 @@ a:active {
 .link {
   text-decoration: none;
   box-shadow:none;
+
   &:hover{
+    text-decoration:none;
+    box-shadow:none;
     background-image:none;
   }
 }
